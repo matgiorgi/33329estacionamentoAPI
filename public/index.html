@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>API Estacionamento</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>API Estacionamento</h1>
+    <p>Gerencie entradas e saídas de veículos de forma simples</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Registrar Entrada</h2>
+      <input type="text" id="plateEntry" placeholder="Digite a placa do veículo" maxlength="8" />
+      <button id="btnEntry" class="btn-primary">Registrar Entrada</button>
+      <pre id="responseEntry" class="response"></pre>
+    </section>
+
+    <section class="card">
+      <h2>Registrar Saída</h2>
+      <input type="text" id="plateExit" placeholder="Digite a placa do veículo" maxlength="8" />
+      <button id="btnExit" class="btn-primary">Registrar Saída</button>
+      <pre id="responseExit" class="response"></pre>
+    </section>
+
+    <section class="card">
+      <h2>Consultar Veículo</h2>
+      <input type="text" id="plateCheck" placeholder="Digite a placa do veículo" maxlength="8" />
+      <button id="btnCheck" class="btn-primary">Consultar</button>
+      <pre id="responseCheck" class="response"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Estacionamento API - Feito por você</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
